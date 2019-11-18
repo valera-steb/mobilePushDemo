@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FmcPush"
+             x:Class="FmcPush.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Scroll to end" />
+            <Switch x:Name="scrollToEnd"/>
+            <Button Text="Clear" Clicked="Button_Clicked" />
+        </StackLayout>
+        <ScrollView x:Name="scrollView">
+            <ListView x:Name="listView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Date}"/>
+                                    <Label Text="{Binding Message}"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>

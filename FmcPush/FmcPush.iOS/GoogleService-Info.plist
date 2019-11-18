@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>945143816380-3tis4j8nerosthoil85em394m0ekktsf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.945143816380-3tis4j8nerosthoil85em394m0ekktsf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCDcyULietIriN32xAErIlVs1BIgS8ychQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>945143816380</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lifevision.FmcPush</string>
+	<key>PROJECT_ID</key>
+	<string>active-valve-125910</string>
+	<key>STORAGE_BUCKET</key>
+	<string>active-valve-125910.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:945143816380:ios:7c437ae483086a300370b9</string>
+	<key>DATABASE_URL</key>
+	<string>https://active-valve-125910.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "945143816380",
+    "firebase_url": "https://active-valve-125910.firebaseio.com",
+    "project_id": "active-valve-125910",
+    "storage_bucket": "active-valve-125910.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945143816380:android:4e2d2c6827fe91370370b9",
+        "android_client_info": {
+          "package_name": "com.companyname.FmcPush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945143816380-gutbgjm2ihfgl5l68i2j7oro1jo1lfii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF5IKZIA3mwva6Bi9_WW6o6HpYs-ivIts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945143816380-gutbgjm2ihfgl5l68i2j7oro1jo1lfii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

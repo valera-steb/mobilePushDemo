@@ -1,5 +1,7 @@
 ﻿using Plugin.FirebasePushNotification;
 using System;
+using System.Net.Http;
+using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,10 +20,23 @@ namespace FmcPush
 
             page.LogMessage("starting");
 
-            CrossFirebasePushNotification.Current.OnTokenRefresh += (s, p) =>
+            CrossFirebasePushNotification.Current.OnTokenRefresh += async (s, p) =>
             {
                 System.Diagnostics.Debug.WriteLine($"TOKEN : {p.Token}");
                 page.LogMessage($"TOKEN : {p.Token}");
+                try
+                {
+                    using (var httpClient = new HttpClient())
+                    using (var content = new StringContent($"\"{p.Token}\"", Encoding.UTF8, "application/json"))
+                    {
+                        await httpClient.PostAsync("http://192.168.0.102:5000/api/device", content);
+                        page.LogMessage("Token is posted");
+                    }
+                }
+                catch (Exception e)
+                {
+                    page.LogMessage(e.Message);
+                }
             };
 
             CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
